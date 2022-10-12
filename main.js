@@ -36,13 +36,13 @@ function changeColour(e) {
 function gridSize(e) {
     console.log(e.target);
     size = prompt("What size would you like your grid to be?", 16);
-    console.log(size, typeof(size));
     size = parseInt(size);
-    console.log(size, typeof(size));
+
+    if (size > 100) {
+        size = 100;
+    }
     size *= size
-    console.log(size);
 
     container.textContent = "";
-
     createGrid(size);
 }
