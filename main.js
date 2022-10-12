@@ -8,9 +8,11 @@ for (let i = 0; i < 256; i++) {
 for (let i = 0; i < divs.length; i++) {
     // divs[i].innerText = i+1;
     divs[i].classList.add("boxes");
+    divs[i].addEventListener("mouseover", changeColour);
     container.appendChild(divs[i]);
 }
 
-
-
-console.log(divs);
+function changeColour(e) {
+    e.target.classList.add("hover");
+    console.log(e.target);
+}
