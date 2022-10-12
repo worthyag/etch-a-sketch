@@ -15,7 +15,6 @@ body {
     height: 500px;
     width: 500px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
     margin: 64px auto;
 }
 
@@ -28,12 +27,31 @@ body {
     background-color: rgba(100, 148, 237, 0.407);
 }
 
-/* .boxes:hover {
-    background-color: rgba(100, 148, 237, 0.407);
-} */
+.for-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-size-btn {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 32px;
+}
+
+.grid-size-btn:hover {
+    background-color: rgba(255, 255, 255, 0.824);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
 
 footer > p {
     position: absolute;
     bottom: 0;
-    left: 43%;
 }
